@@ -2,14 +2,19 @@ import React from "react";
 import Header from "./Header";
 import Order from "./Order";
 import Inventory from "./Inventory";
-import sampleFishes from '../sample-fishes';
-import Fish from './Fish';
+import sampleFishes from "../sample-fishes";
+import Fish from "./Fish";
+import base from "../base";
 
 class App extends React.Component{
     state = {
         fishes: {},
         order: {}
     };
+    componentDidMount() {//stopped at 9:58 in the #18 vid
+        this.ref = base.syncState();
+    }
+
     addFish = fish => {
         // if state was an array, perhaps: this.state.fishes.push(fish);
         // if it was an object, perhaps: this.state.fishes.fish1 = fish;
