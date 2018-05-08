@@ -18,10 +18,14 @@ class App extends React.Component{
             state: 'fishes'
         });
     }
+    componentDidUpdate() {
 
+    }
+    
     componentWillUnmount() {
         base.removeBinding(this.ref);
     }
+
 
     addFish = fish => {
         // if state was an array, perhaps: this.state.fishes.push(fish);
