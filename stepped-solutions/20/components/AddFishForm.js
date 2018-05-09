@@ -6,7 +6,7 @@ class AddFishForm extends React.Component {
   statusRef = React.createRef();
   descRef = React.createRef();
   imageRef = React.createRef();
-
+ 
   createFish = event => {
     // 1.  stop the form from submitting
     event.preventDefault();
