@@ -1,26 +1,23 @@
-/* stopped at 15:00 in the video
+/* 
   Possible Animations:
   enter
   exit
   appear Must set transitionAppear={true} on animation component
 */
 
-<<<<<<< HEAD
 .order-enter
   transform: translateX(-120%)
   transition 0.5s
   max-height: 0
-  padding 0
+  padding 0 !important
   &.order-enter-active
-   max-height 60px  
-   transform: translateX(0)
-   padding 2rem 0 !important
+    max-height: 60px
+    transform: translateX(0)
+    padding 2rem 0 !important
 
-.order-exit 
+.order-exit
   transition 0.5s
   transform: translateX(0)
   &.order-exit-active
-   transform: translateX(-120%)
-   padding 0
-=======
->>>>>>> 8bb448d93bd186f49c43d8fa18f3d49f329d3448
+    transform: translateX(120%)
+    padding: 0
